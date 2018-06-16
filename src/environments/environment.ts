@@ -13,4 +13,5 @@ export const environment = {
     storageBucket: "clientpanelprod-1fea8.appspot.com",
     messagingSenderId: "265566601727"
   }
+  
 };
