@@ -14,8 +14,7 @@ export class ClientService {
   }
   getClients(): Observable<Client[]>{
     //Get clients with the id.
-    this.clients = this.clientsCollection.snapshotChanges()
-    .map(changes => {
+    this.clients = this.clientsCollection.snapshotChanges().map(changes => {
       return changes.map(action => {
         const data = action.payload.doc.data() as Client;
         data.id = action.payload.doc.id;
