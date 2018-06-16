@@ -8,6 +8,10 @@ import { ClientDetailsComponent} from './components/client-details/client-detail
 import { SettingsComponent } from './components/settings/settings.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule, Routes } from '@angular/router';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore'
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 const routes: Routes = [
   { path: '',  component: DashboardComponent },
