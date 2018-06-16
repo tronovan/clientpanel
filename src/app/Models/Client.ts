@@ -2,7 +2,7 @@ export interface Client {
     id?: string;
     firstName?: string;
     lastName?: string;
-    emaio?: string;
+    email?: string;
     phone?: string;
     balance?: number;
 }
